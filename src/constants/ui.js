@@ -6,7 +6,7 @@ export const COLORS = {
     lightGray2: "#F6F6F2",
     lightGray3: "#898C95",
     branding: "#FC6D3F",
-    black: "232323"
+    black: "#232323"
 }
 
 export const SIZES = {
