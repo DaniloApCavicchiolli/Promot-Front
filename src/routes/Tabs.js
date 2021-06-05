@@ -10,7 +10,7 @@ import Configuracoes from '../screens/Configuracoes'
 export default function Tabs(){
     return(
         <Tab.Navigator>
-            <Tab.Screen name="Inicio" component={Home} 
+            <Tab.Screen name="Home" component={Home} 
             options={{tabBarIcon: ()=> (
                 <FontAwesome5 name="user" size={24} color="black" />)}} 
             />

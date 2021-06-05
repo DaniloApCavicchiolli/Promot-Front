@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { View,  ActivityIndicator, Text, StyleSheet, FlatList, RefreshControl } from 'react-native'
-import { withTheme, List, Avatar } from 'react-native-paper'
+import { withTheme, List, Avatar, FAB } from 'react-native-paper'
 import Header from '../components/Header'
 import { BACKEND } from '../constants'
 import ListaCategoria from './ListaCategoria'
@@ -69,12 +69,24 @@ function ListaCategorias({navigation, theme}){
                 />
                 )
             }
+            <FAB
+                    style={styles.fab}
+                    icon='plus'
+                    label=''
+                    onPress={() => navigation.navigate('AdicionaCategoria')}
+                />
         </View>
         </>
     )
 }
 
 const styles = StyleSheet.create({
+    fab: {
+        position: 'absolute',
+        margin: 16,
+        right: 0,
+        bottom: 0
+    },
     tituloAviso: {
         alignItems: 'center',
         justifyContent: 'center',
