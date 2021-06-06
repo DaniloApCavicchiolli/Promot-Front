@@ -69,6 +69,7 @@ function ListaCategorias({navigation, theme}){
                 />
                 )
             }
+            
             <FAB
                     style={styles.fab}
                     icon='plus'

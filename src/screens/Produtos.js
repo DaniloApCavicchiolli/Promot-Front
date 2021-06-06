@@ -11,7 +11,7 @@ function Produtos({navigation, theme}){
     const [carregandoProdutos, setCarregandoProdutos] = useState(false)// para mostrar activity indicator
     const [refreshing, setRefreshing] = useState(false)
 
-    //mostrando as categorias
+    //mostrando os produtos
     useEffect(()=>{
         obterProdutos()
     },[])

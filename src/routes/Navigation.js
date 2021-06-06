@@ -8,6 +8,7 @@ import Configuracoes from '../screens/Configuracoes'
 import Tabs from './Tabs'
 import Produtos from '../screens/Produtos'
 import ListaCategorias from '../screens/ListaCategorias'
+import AdicionaProduto from '../screens/AdicionaProduto'
 
 const Stack = createStackNavigator()
 
@@ -20,6 +21,7 @@ export default function(){
                 <Stack.Screen name="Configuracoes" component={Configuracoes} options={{headerShown: false}}/>
                 <Stack.Screen name="Produtos" component={Produtos} options={{headerShown: false}}/>
                 <Stack.Screen name="ListaCategorias" component={ListaCategorias} options={{headerShown: false}}/>
+                <Stack.Screen name="AdicionaProduto" component={AdicionaProduto} options={{headerShown: false}}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

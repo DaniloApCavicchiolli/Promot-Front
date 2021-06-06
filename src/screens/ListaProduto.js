@@ -47,7 +47,7 @@ function ListaProduto({ data, navigation, theme }) {
                     }}>
                         <List.Item
                             title={data.nome}
-                            description={`status: ${data.status}`}
+                            description={`data_vencimento: ${data.data_vencimento}`}
                         />
                     </View>
                 </TouchableOpacity>

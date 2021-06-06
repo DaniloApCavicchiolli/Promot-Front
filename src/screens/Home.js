@@ -9,7 +9,7 @@ function Home({navigation, theme}){
         {id: 1, nome:'Categorias', descricao:'Categorias de Produtos',
         icone: 'blur', menu: 'ListaCategorias'},
         {id: 2, nome:'Produtos', descricao:'Lista de Produtos',
-        icone:'cog', menu:'Produtos'}
+        icone:'blur', menu:'Produtos'}
     ]
 
     return(
