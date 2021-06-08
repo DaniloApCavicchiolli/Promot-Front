@@ -7,7 +7,7 @@ export const light = {
         ...DefaultTheme.colors,
         primary: "#3f51b5",
         accent: "#757de8",
-        background: "#e1e1e1",
+        background: "#BDBDBD",
         surface: "#f3f3f3",
         text: "#232323"
     }
@@ -21,8 +21,8 @@ export const Dark = {
         primary: "#1769aa",
         accent: "#002984",
         background: "#3c4557",
-        surface: "#232323",
-        text: "#f3f3f3"
+        surface: "#263238",
+        text: "#FAFAFA"
     }
 }
 
