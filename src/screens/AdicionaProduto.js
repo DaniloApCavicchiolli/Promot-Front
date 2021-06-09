@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, Text} from 'react-native'
+import { StyleSheet, View, Text, Alert} from 'react-native'
 import {Caption, TextInput, FAB, HelperText, Checkbox, Snackbar, withTheme } from 'react-native-paper'
 import Header from '../components/Header'
 import { BACKEND } from '../constants'
@@ -59,6 +59,7 @@ function AdicionaProduto({navigation, route, theme}){
           setQuantidade('')
           setDataAbastecimento('')
           setDataVencimento('')
+          Alert.alert('Registro salvo com sucesso!')
         })
         .catch(function (error) {
           setAviso('Não foi possível salvar o registro')
@@ -103,15 +104,6 @@ function AdicionaProduto({navigation, route, theme}){
           disabled={erros.length > 0}
           onPress={() => salvaProduto()}
         />
-        <Snackbar
-          visible={aviso.length > 0}
-          onDismiss={() => setAviso('')}
-          action={{
-            label: 'Voltar',
-            onPress: () => navigation.goBack()
-          }}>
-          <Text>{aviso}</Text>
-        </Snackbar>
         </View>
         </>
     )
